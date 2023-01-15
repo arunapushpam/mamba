@@ -85,13 +85,16 @@ body{
 	}
 	.topnav ul, li{
 	
-	display:block;
+	/* display:block; */
 	display:flex;
 	}
 	.topnav a{
 		padding:.5rem;
 		text-decoration:none;
 		color:#1c5c93;
+	}
+	.topnav a:hover{
+		color:blue;
 	}
 }
 /* media end */

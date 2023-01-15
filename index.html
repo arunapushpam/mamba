@@ -12,8 +12,8 @@
 <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
 </head>
 <body>
-		<div class="header">
-			<section class="container"> 
+		<section class="header">
+			<div class="container"> 
 				<div class="phone">
 					<div class="info">
 						<div class="phone1">
@@ -36,16 +36,16 @@
 					
 					</div> 
 				</div>
-			</section>
-		</div>
-		<div class="head">
-			<section class="container">
+			</div>
+		</section>
+		<section class="head">
+			<div class="container">
 			    <div class="topnav">
 				    <div class="mamba1">
 						<a href="#">MAMBA</a>
 					</div>
 					
-						<ul>
+						<ul id="navid">
 							<li><a href="#Home" style="color:blue;">Home</a></li>
 							<li><a href="#About">About</a></li>
 							<li><a href="#Service">Services</a></li>
@@ -54,22 +54,37 @@
 							<li><a href="#">Drop Down</a></li>
 							<li><a href="#Contact">Contact</a></li>
 						</ul>
-						<iconify-icon icon="bi:list"></iconify-icon>
+						<iconify-icon icon="bi:list" onClick="name()"></iconify-icon>
+						
 				</div>
-			</section>
-		</div>
-		<div class="bg" id="Home">
-			<section class="container">
+				<script>
+					function name(){
+						var navid=document.getElementById("navid");
+						if(navid.style.display===''||navid.style.display==="none"){
+							navid.style.display="block";
+						}
+						else if(navid.style.display==="block"){
+							navid.style.display="block";
+						}
+						else{
+							navid.style.display="block"
+						}
+					}
+				</script>
+			</div>
+		</section>
+		<section class="bg" id="Home">
+			<div class="container">
 				<div class="loram">
 					<h1>Welcome to Mamba</h1>
 					<p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
 					<a class="read" href="#">Read More</a>
 				</div>
 			
-			</section>
-		 </div> <!--1st finihed-->
-		 <div class="about">
-			<section class="container">
+			</div>
+		 </section> <!--1st finihed-->
+		 <section class="about">
+			<div class="container">
 				<div class="abt">
 					<div class="about1">
 						<div class="aboutus">
@@ -99,11 +114,11 @@
 						</div>
 					</div>
 				</div>
-			</section>
-		 </div>
+			</div>
+		 </section>
 		 <!-- second page finished -->
-		 <div class="lorem">
-			<section class="container">
+		 <section class="lorem">
+			<div class="container">
 				<div class="velit">
 					<div class="qui">
 						<h3>01</h3>
@@ -136,10 +151,10 @@
 						<p>Quis eum numquam veniam ea voluptatibus voluptas. Excepturi aut nostrum repudiandae voluptatibus corporis sequi</p>
 					</div>
 				</div>
-			</section>
-		</div> <!--finished -->
-		<div class="happy">
-			<section class="container">
+			</div>
+		</section> <!--finished -->
+		<section class="happy">
+			<div class="container">
 				<div class="client">
 					<div class="project">
 						<h2>232</h2>
@@ -158,10 +173,10 @@
 						<p>Hard Workers</p>
 					</div>
 				</div>
-			</section>
-		</div>
-		<div class="service" id="Service">
-			<section class="container">
+			</div>
+		</section>
+		<section class="service" id="Service">
+			<div class="container">
 				<div class="services">
 					<h1>Services</h1>
 				</div>
@@ -209,10 +224,10 @@
 						<p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
 					</div>
 				</div>
-			</section>
-		</div><!-- finished -->
-		<div class="Portfolio" id="Portfolio">
-			<section class="container">
+			</div>
+		</section><!-- finished -->
+		<section class="Portfolio" id="Portfolio">
+			<div class="container">
 				<div class="Portfolio1">
 					<div class="service">
 						<h1>Our Portfolio</h1>
@@ -363,12 +378,12 @@
 					</div>
 				</div>
 				
-			</section>
-		</div>
+			</div>
+		</section>
 		<!-- finished-->
 		
-		<div class="teams" id="Team">
-	<section class="container">
+		<section class="teams" id="Team">
+	<div class="container">
 		<div class="Portfolio1">
 			<h1>OUR TEAM</h1>
 			<p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.</p>
@@ -435,11 +450,11 @@
 				</div>
 			</div>
 		</div>
-	</section>
-</div>
+	</div>
+</section>
 <!-- finished -->
-		<div class="free">
-			<section class="container">
+		<section class="free">
+			<div class="container">
 				<div class="as1">
 				<h1>Frequently Asked Questions</h1>
 				</div> 
@@ -469,10 +484,10 @@
 						<p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
 					</div>
 				</div>
-			</section>
-		</div>
-		<div class="contact" id="Contact">
-			<section class="container">
+			</div>
+		</section>
+		<section class="contact" id="Contact">
+			<div class="container">
 				<div class="con1">
 					<h1>Contact Us</h1>
 				</div>
@@ -501,11 +516,11 @@
 						<p>+1 6678 254445 41</p>
 					</div>
 				</div>
-			</section>
-		</div>
+			</div>
+		</section>
 		<!-- contact finished -->
-		<div class="forms">
-			<section class="container">
+		<section class="forms">
+			<div class="container">
 					<div class="form">
 						<div class="for">
 							<div class="form1">
@@ -526,10 +541,10 @@
 								<a href="#">Send Message</a>
 							</div>
 					</div>
-			</section>
-		</div>
-		<div class="mambas">
-			<section class="container">
+			</div>
+		</section>
+		<section class="mambas">
+			<div class="container">
 				<div class="mambas1">
 					<div class="adam">
 							<h3>Mamba</h3>
@@ -589,15 +604,15 @@
 						</form>
 					</div>
 				</div>
-			</section>
-		</div>
-		<div class="copy">
-			<section class="container">
+			</div>
+		</section>
+		<section class="copy">
+			<div class="container">
 				<div class="right">
 					<p> © Copyright <b>Mamba</b> All Rights Reserved</p>
 					<p> Designed by <a href="#">BootstrapMade</a></p>
 				</div>
-			</section>
-		</div>
+			</div>
+		</section>
 </body>
 </html>
